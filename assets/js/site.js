@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const mobileQuery = window.matchMedia("(max-width: 1535px)");
+  // Keep desktop navigation visible; only collapse to a panel on smaller screens.
+  const mobileQuery = window.matchMedia("(max-width: 64rem)");
 
   document.querySelectorAll(".site-header").forEach((header) => {
     const toggle = header.querySelector(".menu-toggle");
@@ -12,6 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeMenu = () => {
       header.classList.remove("is-menu-open");
       toggle.setAttribute("aria-expanded", "false");
+      document.documentElement.classList.remove("is-nav-open");
+      document.body.classList.remove("is-nav-open");
     };
 
     const syncMenu = () => {
@@ -23,6 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.addEventListener("click", () => {
       const isOpen = header.classList.toggle("is-menu-open");
       toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      document.documentElement.classList.toggle("is-nav-open", isOpen);
+      document.body.classList.toggle("is-nav-open", isOpen);
     });
 
     panel.querySelectorAll("a[href^='#']").forEach((link) => {
@@ -31,6 +36,16 @@ document.addEventListener("DOMContentLoaded", () => {
           closeMenu();
         }
       });
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (!mobileQuery.matches) {
+        return;
+      }
+
+      if (event.key === "Escape") {
+        closeMenu();
+      }
     });
 
     if (typeof mobileQuery.addEventListener === "function") {

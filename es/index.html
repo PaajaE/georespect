@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap&subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css">
   <script src="../assets/js/site.js" defer></script>
+  <script src="../assets/js/references-data.js" defer></script>
+  <script src="../assets/js/references-gallery.js" defer></script>
   <link rel="alternate" hreflang="en" href="../en/">
   <link rel="alternate" hreflang="cs" href="../cs/">
   <link rel="alternate" hreflang="es" href="../es/">
@@ -31,18 +33,24 @@
         <nav class="primary-nav" aria-label="Principal">
           <ul>
             <li><a href="#applied-geomorphology">Inicio</a></li>
-            <li><a href="#geomorphological-terrain-analysis">Análisis geomorfológico del terreno</a></li>
-            <li><a href="#analysis-of-natural-hazards">Análisis de los peligros naturales</a></li>
+            <li><a href="#geomorphological-terrain-analysis">Geomorfología</a></li>
+            <li><a href="#analysis-of-natural-hazards">Peligros geológicos</a></li>
             <li><a href="#references">Referencias</a></li>
             <li><a href="#contacts">Contactos</a></li>
           </ul>
         </nav>
         <div class="header-tools">
-          <ul class="lang-switch" aria-label="Idioma">
-            <li><a href="../en/" lang="en">English</a></li>
-            <li><a href="../cs/" lang="cs">Čeština</a></li>
-            <li><a href="./" aria-current="true" lang="es">Español</a></li>
-          </ul>
+          <details class="lang-select" aria-label="Idioma">
+            <summary class="lang-select__trigger" aria-label="Cambiar idioma" title="Idioma">
+              <span aria-hidden="true">🇪🇸</span>
+              <span class="lang-select__chev" aria-hidden="true"></span>
+            </summary>
+            <ul class="lang-select__menu" role="list">
+              <li><a href="../en/" lang="en" title="English"><span aria-hidden="true">🇬🇧</span><span>English</span></a></li>
+              <li><a href="../cs/" lang="cs" title="Čeština"><span aria-hidden="true">🇨🇿</span><span>Čeština</span></a></li>
+              <li><a href="./" aria-current="true" lang="es" title="Español"><span aria-hidden="true">🇪🇸</span><span>Español</span></a></li>
+            </ul>
+          </details>
           <a class="contact-email" href="mailto:georespect@georespect.cz">georespect@georespect.cz</a>
         </div>
       </div>
@@ -101,155 +109,7 @@
     <section class="section" id="references" aria-labelledby="heading-references">
       <div class="section__inner section__inner--references">
         <h2 id="heading-references">Referencias</h2>
-        <ul class="reference-list">
-        <li class="reference">
-          <h3>Programa de adaptación de los sistemas agrícolas en la cuenca hidrográfica de la Sierra Hambaricho — ASAP en Hambaricho</h3>
-          <p class="reference__meta">2023 – 2025</p>
-          <div class="reference__body">
-            <p><em>Ubicación:</em> Región Sidama, Etiopía</p>
-            <p><em>Contratante:</em> ONG People in Need — Agencia de Desarrollo de la República Checa</p>
-            <p><em>Objetivo:</em> Análisis de los riesgos geológicos y medioambientales en la zona de la Sierra Hambaricho.</p>
-          </div>
-        </li>
-        <li class="reference">
-          <h3>Desarrollo participativo del paisaje productivo en la región de Sidama, Etiopía, II</h3>
-          <p class="reference__meta">2023 – 2024</p>
-          <div class="reference__body">
-            <p><em>Ubicación:</em> Región Sidama, Etiopía</p>
-            <p><em>Contratante:</em> ONG People in Need — Agencia de Desarrollo de la República Checa</p>
-            <p><em>Objetivo:</em> Estudio biofísico (riesgos geológicos), exploración y documentación enfocadas en las características geomorfológicas, litológicas y geodinámicas locales a fin de conservar y gestionar los recursos de agua y suelo hacia una agricultura sostenible y la protección de los recursos naturales.</p>
-          </div>
-        </li>
-        <li class="reference">
-          <h3>Investigación y selección de emplazamientos adecuados para la construcción de instalaciones de almacenamiento subterráneo de pasivos radioactivos en la República Checa</h3>
-          <p class="reference__meta">2023 – 2025</p>
-          <div class="reference__body">
-            <p><em>Contratante:</em> Autoridad de Repositorios de Residuos Radiactivos (SÚRAO)</p>
-            <p><em>Ubicación:</em> República Checa</p>
-            <p><em>Objetivo:</em> Consultoría especializada en geología y geomorfología para la investigación y selección de emplazamientos adecuados para la construcción de instalaciones de almacenamiento subterráneo de pasivos radioactivos.</p>
-          </div>
-        </li>
-        <li class="reference">
-          <h3>Interpretación de los datos geomorfológicos para los visitantes del Geoparque Šumava Real</h3>
-          <p class="reference__meta">2023 – 2024</p>
-          <div class="reference__body">
-            <p><em>Ubicación:</em> Región de Pilsen y Región de Bohemia Meridional, República Checa</p>
-            <p><em>Objetivo:</em></p>
-            <ul>
-              <li>Análisis geomorfológico del terreno e interpretación de datos topográficos por escaneo LIDAR.</li>
-              <li>Mapa geomorfológico del terreno (500 km²).</li>
-              <li>Aplicativo digital.</li>
-            </ul>
-          </div>
-        </li>
-        <li class="reference">
-          <h3>Evaluación preliminar de peligros geológicos mediante el análisis geomorfológico para el proyecto inmobiliario «Miami Beach Peruano»</h3>
-          <p class="reference__meta">2022</p>
-          <div class="reference__body">
-            <p><em>Ubicación:</em> Distrito Comandante Noel, Provincia de Casma, Región Áncash, Perú</p>
-            <p><em>Objetivo:</em> Evaluación preliminar para identificar peligros geológicos existentes en un contexto de hasta 50 km² mediante análisis geomorfológico en gabinete: 20 km² (escala 1:5000), 30 km² (escala 1:25 000).</p>
-          </div>
-        </li>
-        <li class="reference">
-          <h3>Estudio de vulnerabilidad por peligros geológicos tras sismo de 7,5 para alternativas de trazado viario a nivel conceptual — sector Aserradero km 265+390 al km 275+050, Región Amazonas, Perú</h3>
-          <p class="reference__meta">2022</p>
-          <div class="reference__body">
-            <p><em>Tipo del proyecto:</em> Proyecto de la concesionaria IIRSA NORTE</p>
-            <p><em>Ubicación:</em> Sector Aserradero, Distrito de Jamalca, Provincia de Utcubamba, Región Amazonas, Perú</p>
-            <p><em>Objetivo del proyecto:</em></p>
-            <ul>
-              <li>Levantamiento topográfico LIDAR con UAV del área de estudio (hasta 60 km²).</li>
-              <li>Creación del modelo digital del relieve (MDR) en hasta 60 km² a escala 1:10 000.</li>
-              <li>Análisis geomorfológico del terreno e interpretación de imágenes satelitales y MDR.</li>
-              <li>Relevamiento de campo de documentación geológica y geomorfológica de forma visual.</li>
-              <li>Análisis de susceptibilidad del territorio frente a peligros naturales.</li>
-              <li>Con base en zonas de alta vulnerabilidad, plantear al menos tres alternativas de trazo para Aserradero a nivel conceptual.</li>
-              <li>Presentar propuesta de medidas de protección frente a los procesos naturales.</li>
-            </ul>
-          </div>
-        </li>
-        <li class="reference">
-          <h3>«Salida del río Piura hacia el océano Pacífico» — informe para el plan maestro de control de inundaciones del río Piura — Autoridad para la Reconstrucción con Cambios (ARCC)</h3>
-          <p class="reference__meta">2022</p>
-          <div class="reference__body">
-            <p>Recomendación de una ruta adecuada para la descarga de aguas de inundación al mar mediante análisis geomorfológico del terreno.</p>
-            <p>Proyecto de la Autoridad para la Reconstrucción con Cambios, Gobierno del Perú.<br>Subcontrato de GEORESPECT s.r.o. para ARUP PERÚ.</p>
-          </div>
-        </li>
-        <li class="reference">
-          <h3>Compilación de mapas geológicos e hidrogeológicos a escala 1:1 000 000 para todo el territorio de Etiopía</h3>
-          <p class="reference__meta">2020 – 2022</p>
-          <div class="reference__body">
-            <p>GEORespect, como subcontratista del Servicio Geológico Checo, implementa:</p>
-            <ul>
-              <li>Desarrollo de una base topográfica para el mapeo geológico a escala 1:750 000 del territorio de Etiopía.</li>
-              <li>Análisis morfo-tectónico del territorio de Etiopía a escala 1:750 000.</li>
-            </ul>
-            <p>El proyecto está financiado por la Agencia Checa de Desarrollo.</p>
-          </div>
-        </li>
-        <li class="reference">
-          <h3>Análisis de la vulnerabilidad de la cuenca baja del río Piura por inundaciones y posibilidades de reducirla — proyecto piloto de análisis de vulnerabilidad ante desastres naturales en el Perú</h3>
-          <p class="reference__meta">2018 – 2019</p>
-          <div class="reference__body">
-            <p>El proyecto analizó 2500 km² de la cuenca baja del río Piura en términos de vulnerabilidad a inundaciones. La implementación incluyó:</p>
-            <ul>
-              <li>Evaluación de los impactos del fenómeno El Niño de 2017.</li>
-              <li>Estudio de susceptibilidad por inundaciones a escala 1:25 000.</li>
-              <li>Propuesta de medidas para reducir la vulnerabilidad del territorio.</li>
-            </ul>
-            <p>Ejecutado con apoyo financiero de la Agencia Checa de Desarrollo.</p>
-          </div>
-        </li>
-        <li class="reference reference--media">
-          <div class="reference__media">
-            <img src="../assets/images/galleries/240x150_g15-Cangrejos-web.jpg" width="240" height="150" alt="">
-          </div>
-          <div>
-            <h3>Reporte preliminar de reconocimiento geomorfológico de las zonas afectadas por el fenómeno de El Niño en la cuenca baja de los ríos Piura y Chira</h3>
-            <p class="reference__meta">2017</p>
-          </div>
-        </li>
-        <li class="reference reference--media">
-          <div class="reference__media">
-            <img src="../assets/images/galleries/240x150_g11-ETE-jih.JPG" width="240" height="150" alt="">
-          </div>
-          <div>
-            <h3>Mapa geomorfológico de la ETE — zona sur a escala 1:10 000 (República Checa)</h3>
-            <p class="reference__meta">2017</p>
-            <div class="reference__body">
-              <p>El propósito del contrato fue crear un mapa geomorfológico de la parte sur de la central nuclear de Temelín (32 km²) a partir del modelo digital del terreno. El objetivo básico fue definir formas y unidades geomorfológicas y evaluar los procesos exodinámicos actuales.</p>
-              <p>GEORespect lo ejecutó como subcontratista de AQUATEST en el marco del contrato de evaluación de información geológica para almacenamiento de residuos nucleares en el polígono ETE — Sur. El patrocinador es la estructura organizativa de la República Checa — Autoridad de Repositorios de Residuos Radiactivos.</p>
-            </div>
-          </div>
-        </li>
-        <li class="reference reference--media">
-          <div class="reference__media">
-            <img src="../assets/images/galleries/240x150_g12-Miramar-Vichayal-Peru.JPG" width="240" height="150" alt="">
-          </div>
-          <div>
-            <h3>Evaluación de la vulnerabilidad física del territorio Miramar–Vichayal (región de Piura, Perú) para un proyecto agrícola</h3>
-            <p class="reference__meta">2017</p>
-            <div class="reference__body">
-              <p>El objetivo fue evaluar los procesos exodinámicos actuales con especial atención a peligros naturales potenciales (inundaciones, erosión, deslizamientos y salinización) en 12 000 ha. Entregables: mapa geomorfológico, mapa de susceptibilidad y panorama de zonas aptas para agricultura.</p>
-              <p>Trabajo producido para Agroetanol Pacífico S.A.</p>
-            </div>
-          </div>
-        </li>
-        <li class="reference reference--media">
-          <div class="reference__media">
-            <img src="../assets/images/galleries/240x150_g13-Honduras.JPG" width="240" height="150" alt="">
-          </div>
-          <div>
-            <h3>Cartografía y evaluación geomorfológica de municipios seleccionados de Honduras para el proyecto «Gestión de Riesgos de Desastres» (PGRD)</h3>
-            <p class="reference__meta">2015 – 2016</p>
-            <div class="reference__body">
-              <p>El contrato comprendió mapas geomorfológicos de 14 municipios de Honduras (aprox. 7000 km²) a partir del modelo digital del terreno. El objetivo fue definir formas de relieve y evaluar procesos exodinámicos con foco en peligros naturales.</p>
-              <p>Subcontrato para COPECO.</p>
-            </div>
-          </div>
-        </li>
-      </ul>
+        <div data-component="reference-gallery"></div>
       </div>
     </section>
 
